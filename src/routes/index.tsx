@@ -164,7 +164,7 @@ function Hero() {
               <span className="text-foreground">Vamshi</span>
             </h1>
             <p className="mt-4 font-display text-lg text-muted-foreground sm:text-xl">
-              Software Developer · UI/UX Designer · Graphic Designer
+              UI/UX Designer · Software Developer
             </p>
           </div>
 
