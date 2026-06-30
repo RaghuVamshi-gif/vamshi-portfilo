@@ -195,9 +195,9 @@ function Hero() {
           </div>
 
           <div className="flex items-center gap-4 pt-2">
-            <SocialIcon href="https://github.com" icon={<Github className="h-4 w-4" />} />
-            <SocialIcon href="https://linkedin.com" icon={<Linkedin className="h-4 w-4" />} />
-            <SocialIcon href="mailto:hello@raghuvamshi.dev" icon={<Mail className="h-4 w-4" />} />
+            <SocialIcon href="https://github.com/RaghuVamshi-gif" icon={<Github className="h-4 w-4" />} />
+            <SocialIcon href="https://linkedin.com/in/raghu-vamshi-p" icon={<Linkedin className="h-4 w-4" />} />
+            <SocialIcon href="mailto:Raghuvamshipapa@gmail.com" icon={<Mail className="h-4 w-4" />} />
           </div>
         </div>
 
