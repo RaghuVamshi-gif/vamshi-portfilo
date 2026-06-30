@@ -95,7 +95,7 @@ function Nav() {
           <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-[#00D9FF] to-[#8B5CF6] text-black">
             R
           </span>
-          <span className="text-gradient">RAGHU.VAMSHI</span>
+          <span className="text-gradient">RAGHU VAMSHI</span>
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {NAV.map((n) => (
@@ -195,9 +195,9 @@ function Hero() {
           </div>
 
           <div className="flex items-center gap-4 pt-2">
-            <SocialIcon href="https://github.com" icon={<Github className="h-4 w-4" />} />
-            <SocialIcon href="https://linkedin.com" icon={<Linkedin className="h-4 w-4" />} />
-            <SocialIcon href="mailto:hello@raghuvamshi.dev" icon={<Mail className="h-4 w-4" />} />
+            <SocialIcon href="https://github.com/RaghuVamshi-gif" icon={<Github className="h-4 w-4" />} />
+            <SocialIcon href="https://linkedin.com/in/raghu-vamshi-p" icon={<Linkedin className="h-4 w-4" />} />
+            <SocialIcon href="mailto:Raghuvamshipapa@gmail.com" icon={<Mail className="h-4 w-4" />} />
           </div>
         </div>
 
@@ -588,9 +588,9 @@ function Contact() {
             software, design and the future of intelligent products.
           </p>
           <div className="space-y-3 pt-2">
-            <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="hello@raghuvamshi.dev" href="mailto:hello@raghuvamshi.dev" />
-            <ContactRow icon={<Github className="h-4 w-4" />} label="GitHub" value="@raghuvamshi" href="https://github.com" />
-            <ContactRow icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="Raghu Vamshi" href="https://linkedin.com" />
+            <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="Raghuvamshipapa@gmail.com" href="mailto:Raghuvamshipapa@gmail.com" />
+            <ContactRow icon={<Github className="h-4 w-4" />} label="GitHub" value="@github.com/RaghuVamshi-gif" href="https://github.com/RaghuVamshi-gif" />
+            <ContactRow icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="www.linkedin.com/in/raghu-vamshi-p" href="https://linkedin.com/in/raghu-vamshi-p" />
           </div>
         </div>
         <form onSubmit={onSubmit} className="glass space-y-4 rounded-3xl p-6 sm:p-8 lg:col-span-3">
@@ -657,7 +657,7 @@ function Footer() {
         <div>
           <div className="flex items-center gap-2 font-display text-sm font-bold tracking-wider">
             <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-[#00D9FF] to-[#8B5CF6] text-black">R</span>
-            <span className="text-gradient">RAGHU.VAMSHI</span>
+            <span className="text-gradient">RAGHU VAMSHI</span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Building intelligent digital experiences through design and technology.
@@ -672,9 +672,9 @@ function Footer() {
         </nav>
         <div className="md:text-right">
           <div className="flex gap-3 md:justify-end">
-            <SocialIcon href="https://github.com" icon={<Github className="h-4 w-4" />} />
-            <SocialIcon href="https://linkedin.com" icon={<Linkedin className="h-4 w-4" />} />
-            <SocialIcon href="mailto:hello@raghuvamshi.dev" icon={<Mail className="h-4 w-4" />} />
+            <SocialIcon href="https://github.com/RaghuVamshi-gif" icon={<Github className="h-4 w-4" />} />
+            <SocialIcon href="https://linkedin.com/in/raghu-vamshi-p" icon={<Linkedin className="h-4 w-4" />} />
+            <SocialIcon href="mailto:Raghuvamshipapa@gmail.com" icon={<Mail className="h-4 w-4" />} />
           </div>
           <p className="mt-4 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
             © 2026 Raghu Vamshi
