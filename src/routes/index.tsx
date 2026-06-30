@@ -164,7 +164,7 @@ function Hero() {
               <span className="text-foreground">Vamshi</span>
             </h1>
             <p className="mt-4 font-display text-lg text-muted-foreground sm:text-xl">
-              UI/UX Designer · Software Developer
+              Software Developer · UI/UX Designer · Graphic Designer
             </p>
           </div>
 
@@ -281,12 +281,13 @@ function About() {
 
 /* ---------- SKILLS ---------- */
 const SKILL_GROUPS = [
-  { icon: Layers, title: "Design", items: [["UI/UX Design", 92], ["Interaction Design", 88], ["Wireframing", 90], ["Prototyping (Figma)", 92]] },
-  { icon: Code2, title: "Development", items: [["React.js", 88], ["JavaScript", 85], ["HTML / CSS", 92], ["Node.js", 78]] },
-  { icon: Brain, title: "Emerging Tech", items: [["ROS 2 Robotics", 78], ["Blockchain (Solidity)", 75], ["Smart Contracts", 72], ["AI Fundamentals", 78]] },
-  { icon: Wrench, title: "Tools", items: [["Figma", 92], ["Git / GitHub", 88], ["Hardhat / Ethers.js", 72], ["Gazebo", 70]] },
-  { icon: Sparkles, title: "Professional", items: [["Project Management", 85], ["Leadership", 85], ["Teamwork", 90], ["Critical Thinking", 88]] },
-  { icon: Box, title: "Languages", items: [["English", 95], ["Telugu", 100], ["Hindi", 88], ["Kannada", 80]] },
+  { icon: Code2, title: "Programming", items: [["Python", 92], ["Java", 80], ["JavaScript", 88], ["C++", 72], ["SQL", 85]] },
+  { icon: Layers, title: "Frontend", items: [["HTML", 95], ["CSS", 92], ["React", 90], ["Tailwind CSS", 88]] },
+  { icon: Box, title: "Backend", items: [["Node.js", 85], ["Express.js", 82], ["REST APIs", 88]] },
+  { icon: Database, title: "Databases", items: [["MySQL", 84], ["MongoDB", 80]] },
+  { icon: Palette, title: "Design", items: [["Figma", 92], ["Photoshop", 80], ["Illustrator", 75], ["Canva", 88]] },
+  { icon: Wrench, title: "Dev Tools", items: [["Git", 90], ["GitHub", 92], ["Docker", 78], ["VS Code", 95]] },
+  { icon: Brain, title: "Emerging Tech", items: [["ROS 2", 78], ["Blockchain", 72], ["Machine Learning", 75], ["AI Fundamentals", 80]] },
 ] as const;
 
 function Skills() {
@@ -389,31 +390,40 @@ function Experience() {
 /* ---------- PROJECTS ---------- */
 const PROJECTS = [
   {
-    name: "Bose Interactive Product Showcase",
-    category: "UI/UX · Figma Prototype",
+    name: "Docksmith",
+    category: "Containerization System",
     description:
-      "A modern Bose product showcase designed in Figma featuring interactive prototypes for Headphones, Speakers and Audio Sunglasses with dynamic color selection and intuitive navigation.",
-    tech: ["Figma", "UI/UX", "Prototyping"],
-    features: ["Interactive Prototypes", "Dynamic Color Selection", "Product Showcase", "Modern Visual Design"],
+      "A Docker-inspired lightweight containerization platform implementing image layers, manifests, storage management and deployment workflows.",
+    tech: ["Python", "Docker", "Linux"],
+    features: ["Layer Management", "Image Building", "Manifest Generation", "Storage Optimization"],
     accent: "from-[#00D9FF] to-[#22D3EE]",
   },
   {
-    name: "Maze-Solving Robot",
-    category: "ROS 2 · Robotics Simulation",
+    name: "Smart Route Optimization",
+    category: "Machine Learning System",
     description:
-      "Autonomous maze-solving robot built with ROS 2 Jazzy and Gazebo. Uses BFS shortest-path planning and LiDAR-based real-time obstacle detection for collision-free navigation.",
-    tech: ["ROS 2", "Gazebo", "Python", "LiDAR"],
-    features: ["BFS Path Planning", "LiDAR Obstacle Avoidance", "Autonomous Navigation", "Gazebo Simulation"],
+      "Intelligent routing system using Machine Learning and Dijkstra's algorithm to predict edge weights and generate optimized paths.",
+    tech: ["Python", "Machine Learning"],
+    features: ["Route Optimization", "Weight Prediction", "Intelligent Path Selection"],
     accent: "from-[#8B5CF6] to-[#00D9FF]",
   },
   {
-    name: "Blockchain AI Content Disclosure",
-    category: "Web3 · Smart Contracts",
+    name: "Blockchain dApp",
+    category: "Decentralized Application",
     description:
-      "Ethereum-based system for permanent, tamper-proof AI content disclosures. Solidity smart contracts with SHA-256 hashing, a React frontend and Node.js REST API for verification and history tracking.",
-    tech: ["Solidity", "React", "Node.js", "Hardhat", "Ethers.js"],
-    features: ["Smart Contracts", "SHA-256 Hashing", "Disclosure Verification", "Full-Stack dApp"],
+      "Decentralized application leveraging blockchain concepts to provide secure and transparent digital transactions.",
+    tech: ["Blockchain", "JavaScript"],
+    features: ["Secure Architecture", "Transparent Records", "Decentralized Workflow"],
     accent: "from-[#22D3EE] to-[#8B5CF6]",
+  },
+  {
+    name: "UI/UX Case Studies",
+    category: "Design Research",
+    description:
+      "User-centric interfaces focused on usability, accessibility and modern design standards.",
+    tech: ["Figma", "User Research"],
+    features: ["User Flows", "Wireframes", "Design Systems", "Interactive Prototypes"],
+    accent: "from-[#00D9FF] to-[#8B5CF6]",
   },
 ] as const;
 
@@ -481,11 +491,11 @@ function Education() {
             <GraduationCap className="h-7 w-7" />
           </div>
           <div className="flex-1">
-            <p className="font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]">2024 — 2027</p>
-            <h3 className="mt-1 font-display text-2xl font-bold">PES University</h3>
-            <p className="text-muted-foreground">Bachelor&apos;s Degree in Computer Science</p>
+            <p className="font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]">Degree</p>
+            <h3 className="mt-1 font-display text-2xl font-bold">Bachelor of Technology</h3>
+            <p className="text-muted-foreground">Computer Science and Engineering</p>
             <div className="mt-5 flex flex-wrap gap-2">
-              {["Computer Science", "Software Engineering", "Algorithms", "Data Structures", "HCI", "Web Development"].map(
+              {["Software Engineering", "Algorithms", "Data Structures", "Databases", "Human Computer Interaction"].map(
                 (f) => (
                   <span
                     key={f}
