@@ -95,7 +95,7 @@ function Nav() {
           <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-[#00D9FF] to-[#8B5CF6] text-black">
             R
           </span>
-          <span className="text-gradient">RAGHU.VAMSHI</span>
+          <span className="text-gradient">RAGHU VAMSHI</span>
         </a>
         <nav className="hidden items-center gap-7 md:flex">
           {NAV.map((n) => (
