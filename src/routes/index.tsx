@@ -481,11 +481,11 @@ function Education() {
             <GraduationCap className="h-7 w-7" />
           </div>
           <div className="flex-1">
-            <p className="font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]">Degree</p>
-            <h3 className="mt-1 font-display text-2xl font-bold">Bachelor of Technology</h3>
-            <p className="text-muted-foreground">Computer Science and Engineering</p>
+            <p className="font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]">2024 — 2027</p>
+            <h3 className="mt-1 font-display text-2xl font-bold">PES University</h3>
+            <p className="text-muted-foreground">Bachelor&apos;s Degree in Computer Science</p>
             <div className="mt-5 flex flex-wrap gap-2">
-              {["Software Engineering", "Algorithms", "Data Structures", "Databases", "Human Computer Interaction"].map(
+              {["Computer Science", "Software Engineering", "Algorithms", "Data Structures", "HCI", "Web Development"].map(
                 (f) => (
                   <span
                     key={f}
