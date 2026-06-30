@@ -281,13 +281,12 @@ function About() {
 
 /* ---------- SKILLS ---------- */
 const SKILL_GROUPS = [
-  { icon: Code2, title: "Programming", items: [["Python", 92], ["Java", 80], ["JavaScript", 88], ["C++", 72], ["SQL", 85]] },
-  { icon: Layers, title: "Frontend", items: [["HTML", 95], ["CSS", 92], ["React", 90], ["Tailwind CSS", 88]] },
-  { icon: Box, title: "Backend", items: [["Node.js", 85], ["Express.js", 82], ["REST APIs", 88]] },
-  { icon: Database, title: "Databases", items: [["MySQL", 84], ["MongoDB", 80]] },
-  { icon: Palette, title: "Design", items: [["Figma", 92], ["Photoshop", 80], ["Illustrator", 75], ["Canva", 88]] },
-  { icon: Wrench, title: "Dev Tools", items: [["Git", 90], ["GitHub", 92], ["Docker", 78], ["VS Code", 95]] },
-  { icon: Brain, title: "Emerging Tech", items: [["ROS 2", 78], ["Blockchain", 72], ["Machine Learning", 75], ["AI Fundamentals", 80]] },
+  { icon: Layers, title: "Design", items: [["UI/UX Design", 92], ["Interaction Design", 88], ["Wireframing", 90], ["Prototyping (Figma)", 92]] },
+  { icon: Code2, title: "Development", items: [["React.js", 88], ["JavaScript", 85], ["HTML / CSS", 92], ["Node.js", 78]] },
+  { icon: Brain, title: "Emerging Tech", items: [["ROS 2 Robotics", 78], ["Blockchain (Solidity)", 75], ["Smart Contracts", 72], ["AI Fundamentals", 78]] },
+  { icon: Wrench, title: "Tools", items: [["Figma", 92], ["Git / GitHub", 88], ["Hardhat / Ethers.js", 72], ["Gazebo", 70]] },
+  { icon: Sparkles, title: "Professional", items: [["Project Management", 85], ["Leadership", 85], ["Teamwork", 90], ["Critical Thinking", 88]] },
+  { icon: Box, title: "Languages", items: [["English", 95], ["Telugu", 100], ["Hindi", 88], ["Kannada", 80]] },
 ] as const;
 
 function Skills() {
