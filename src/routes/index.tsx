@@ -588,9 +588,9 @@ function Contact() {
             software, design and the future of intelligent products.
           </p>
           <div className="space-y-3 pt-2">
-            <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="hello@raghuvamshi.dev" href="mailto:hello@raghuvamshi.dev" />
-            <ContactRow icon={<Github className="h-4 w-4" />} label="GitHub" value="@raghuvamshi" href="https://github.com" />
-            <ContactRow icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="Raghu Vamshi" href="https://linkedin.com" />
+            <ContactRow icon={<Mail className="h-4 w-4" />} label="Email" value="Raghuvamshipapa@gmail.com" href="mailto:Raghuvamshipapa@gmail.com" />
+            <ContactRow icon={<Github className="h-4 w-4" />} label="GitHub" value="@github.com/RaghuVamshi-gif" href="https://github.com/RaghuVamshi-gif" />
+            <ContactRow icon={<Linkedin className="h-4 w-4" />} label="LinkedIn" value="www.linkedin.com/in/raghu-vamshi-p" href="https://linkedin.com/in/raghu-vamshi-p" />
           </div>
         </div>
         <form onSubmit={onSubmit} className="glass space-y-4 rounded-3xl p-6 sm:p-8 lg:col-span-3">
