@@ -672,9 +672,9 @@ function Footer() {
         </nav>
         <div className="md:text-right">
           <div className="flex gap-3 md:justify-end">
-            <SocialIcon href="https://github.com" icon={<Github className="h-4 w-4" />} />
-            <SocialIcon href="https://linkedin.com" icon={<Linkedin className="h-4 w-4" />} />
-            <SocialIcon href="mailto:hello@raghuvamshi.dev" icon={<Mail className="h-4 w-4" />} />
+            <SocialIcon href="https://github.com/RaghuVamshi-gif" icon={<Github className="h-4 w-4" />} />
+            <SocialIcon href="https://linkedin.com/in/raghu-vamshi-p" icon={<Linkedin className="h-4 w-4" />} />
+            <SocialIcon href="mailto:Raghuvamshipapa@gmail.com" icon={<Mail className="h-4 w-4" />} />
           </div>
           <p className="mt-4 font-mono text-[11px] uppercase tracking-widest text-muted-foreground">
             © 2026 Raghu Vamshi
