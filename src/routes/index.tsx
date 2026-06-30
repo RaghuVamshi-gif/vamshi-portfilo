@@ -657,7 +657,7 @@ function Footer() {
         <div>
           <div className="flex items-center gap-2 font-display text-sm font-bold tracking-wider">
             <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-[#00D9FF] to-[#8B5CF6] text-black">R</span>
-            <span className="text-gradient">RAGHU.VAMSHI</span>
+            <span className="text-gradient">RAGHU VAMSHI</span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Building intelligent digital experiences through design and technology.
