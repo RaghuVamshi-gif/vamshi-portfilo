@@ -58,7 +58,7 @@ function ProjectNotFound() {
 }
 
 function ProjectDetail() {
-  const { project } = Route.useLoaderData();
+  const { project } = Route.useLoaderData() as { project: Project };
   const others = PROJECTS.filter((p) => p.slug !== project.slug).slice(0, 3);
 
   return (
