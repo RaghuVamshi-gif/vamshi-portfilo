@@ -388,70 +388,6 @@ function Experience() {
 }
 
 /* ---------- PROJECTS ---------- */
-const PROJECTS = [
-  {
-    name: "The Masterminds School",
-    category: "Education Web Platform",
-    description:
-      "A modern, responsive website for an educational institution featuring an immersive landing experience, program showcases and an engaging admissions journey.",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
-    features: ["Responsive Layout", "Program Showcase", "Admissions Flow", "Motion Design"],
-    accent: "from-[#00D9FF] to-[#22D3EE]",
-    link: "https://the-masterminds-school.netlify.app/",
-  },
-  {
-    name: "Forma Developer",
-    category: "Product Landing Experience",
-    description:
-      "A sleek developer-focused product landing site built with a clean design system, fluid transitions and conversion-oriented sections.",
-    tech: ["React", "TypeScript", "Tailwind CSS"],
-    features: ["Design System", "Fluid Animations", "Performance Optimized", "Modern UI"],
-    accent: "from-[#8B5CF6] to-[#00D9FF]",
-    link: "https://forma-developer.netlify.app/",
-  },
-  {
-    name: "Docksmith",
-    category: "Containerization System",
-    description:
-      "A Docker-inspired lightweight containerization platform implementing image layers, manifests, storage management and deployment workflows.",
-    tech: ["Python", "Docker", "Linux"],
-    features: ["Layer Management", "Image Building", "Manifest Generation", "Storage Optimization"],
-    accent: "from-[#00D9FF] to-[#22D3EE]",
-    link: null,
-  },
-  {
-    name: "Smart Route Optimization",
-    category: "Machine Learning System",
-    description:
-      "Intelligent routing system using Machine Learning and Dijkstra's algorithm to predict edge weights and generate optimized paths.",
-    tech: ["Python", "Machine Learning"],
-    features: ["Route Optimization", "Weight Prediction", "Intelligent Path Selection"],
-    accent: "from-[#8B5CF6] to-[#00D9FF]",
-    link: null,
-  },
-  {
-    name: "Blockchain dApp",
-    category: "Decentralized Application",
-    description:
-      "Decentralized application leveraging blockchain concepts to provide secure and transparent digital transactions.",
-    tech: ["Blockchain", "JavaScript"],
-    features: ["Secure Architecture", "Transparent Records", "Decentralized Workflow"],
-    accent: "from-[#22D3EE] to-[#8B5CF6]",
-    link: null,
-  },
-  {
-    name: "UI/UX Case Studies",
-    category: "Design Research",
-    description:
-      "User-centric interfaces focused on usability, accessibility and modern design standards.",
-    tech: ["Figma", "User Research"],
-    features: ["User Flows", "Wireframes", "Design Systems", "Interactive Prototypes"],
-    accent: "from-[#00D9FF] to-[#8B5CF6]",
-    link: null,
-  },
-] as const;
-
-
 function Projects() {
   return (
     <Section id="projects" eyebrow="04 · Projects" title="Selected Work">
@@ -471,23 +407,16 @@ function Projects() {
                 </p>
                 <h3 className="mt-2 font-display text-2xl font-bold sm:text-3xl">{p.name}</h3>
               </div>
-              {p.link ? (
-                <a
-                  href={p.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Visit ${p.name} live site`}
-                  className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-[#22D3EE]/40 text-[#22D3EE] transition-transform hover:scale-110 group-hover:rotate-45"
-                >
-                  <ArrowRight className="h-4 w-4" />
-                </a>
-              ) : (
-                <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-white/10 transition-transform group-hover:rotate-45">
-                  <ArrowRight className="h-4 w-4" />
-                </div>
-              )}
-
+              <Link
+                to="/projects/$slug"
+                params={{ slug: p.slug }}
+                aria-label={`View details for ${p.name}`}
+                className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-[#22D3EE]/40 text-[#22D3EE] transition-transform hover:scale-110 group-hover:rotate-45"
+              >
+                <ArrowRight className="h-4 w-4" />
+              </Link>
             </div>
+
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
 
             <div className="mt-5 grid grid-cols-2 gap-2">
