@@ -471,9 +471,22 @@ function Projects() {
                 </p>
                 <h3 className="mt-2 font-display text-2xl font-bold sm:text-3xl">{p.name}</h3>
               </div>
-              <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-white/10 transition-transform group-hover:rotate-45">
-                <ArrowRight className="h-4 w-4" />
-              </div>
+              {p.link ? (
+                <a
+                  href={p.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label={`Visit ${p.name} live site`}
+                  className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-[#22D3EE]/40 text-[#22D3EE] transition-transform hover:scale-110 group-hover:rotate-45"
+                >
+                  <ArrowRight className="h-4 w-4" />
+                </a>
+              ) : (
+                <div className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-white/10 transition-transform group-hover:rotate-45">
+                  <ArrowRight className="h-4 w-4" />
+                </div>
+              )}
+
             </div>
             <p className="mt-4 text-sm leading-relaxed text-muted-foreground">{p.description}</p>
 
