@@ -390,6 +390,26 @@ function Experience() {
 /* ---------- PROJECTS ---------- */
 const PROJECTS = [
   {
+    name: "The Masterminds School",
+    category: "Education Web Platform",
+    description:
+      "A modern, responsive website for an educational institution featuring an immersive landing experience, program showcases and an engaging admissions journey.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    features: ["Responsive Layout", "Program Showcase", "Admissions Flow", "Motion Design"],
+    accent: "from-[#00D9FF] to-[#22D3EE]",
+    link: "https://the-masterminds-school.netlify.app/",
+  },
+  {
+    name: "Forma Developer",
+    category: "Product Landing Experience",
+    description:
+      "A sleek developer-focused product landing site built with a clean design system, fluid transitions and conversion-oriented sections.",
+    tech: ["React", "TypeScript", "Tailwind CSS"],
+    features: ["Design System", "Fluid Animations", "Performance Optimized", "Modern UI"],
+    accent: "from-[#8B5CF6] to-[#00D9FF]",
+    link: "https://forma-developer.netlify.app/",
+  },
+  {
     name: "Docksmith",
     category: "Containerization System",
     description:
@@ -397,6 +417,7 @@ const PROJECTS = [
     tech: ["Python", "Docker", "Linux"],
     features: ["Layer Management", "Image Building", "Manifest Generation", "Storage Optimization"],
     accent: "from-[#00D9FF] to-[#22D3EE]",
+    link: null,
   },
   {
     name: "Smart Route Optimization",
@@ -406,6 +427,7 @@ const PROJECTS = [
     tech: ["Python", "Machine Learning"],
     features: ["Route Optimization", "Weight Prediction", "Intelligent Path Selection"],
     accent: "from-[#8B5CF6] to-[#00D9FF]",
+    link: null,
   },
   {
     name: "Blockchain dApp",
@@ -415,6 +437,7 @@ const PROJECTS = [
     tech: ["Blockchain", "JavaScript"],
     features: ["Secure Architecture", "Transparent Records", "Decentralized Workflow"],
     accent: "from-[#22D3EE] to-[#8B5CF6]",
+    link: null,
   },
   {
     name: "UI/UX Case Studies",
@@ -424,8 +447,10 @@ const PROJECTS = [
     tech: ["Figma", "User Research"],
     features: ["User Flows", "Wireframes", "Design Systems", "Interactive Prototypes"],
     accent: "from-[#00D9FF] to-[#8B5CF6]",
+    link: null,
   },
 ] as const;
+
 
 function Projects() {
   return (
