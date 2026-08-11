@@ -462,6 +462,7 @@ function Education() {
             <p className="font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]">Degree</p>
             <h3 className="mt-1 font-display text-2xl font-bold">Bachelor of Technology</h3>
             <p className="text-muted-foreground">Computer Science and Engineering</p>
+            <p className="mt-1 font-display text-sm font-medium text-foreground">PES UNIVERSITY</p>
             <div className="mt-5 flex flex-wrap gap-2">
               {["Software Engineering", "Algorithms", "Data Structures", "Databases", "Human Computer Interaction"].map(
                 (f) => (
