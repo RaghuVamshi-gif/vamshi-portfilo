@@ -1,7 +1,7 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { ArrowLeft, ArrowUpRight, CheckCircle2, Calendar, User2 } from "lucide-react";
 import { GridBackdrop, CursorGlow, ScrollProgress } from "@/components/portfolio/Background";
-import { getProject, PROJECTS } from "@/lib/projects";
+import { getProject, PROJECTS, type Project } from "@/lib/projects";
 
 export const Route = createFileRoute("/projects/$slug")({
   loader: ({ params }) => {
