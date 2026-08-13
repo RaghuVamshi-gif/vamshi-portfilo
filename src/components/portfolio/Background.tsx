@@ -80,38 +80,13 @@ export function ParticleField() {
 export function GridBackdrop() {
   return (
     <div className="pointer-events-none fixed inset-0 z-0">
-      <div className="grid-bg absolute inset-0" />
-      <div
-        className="absolute -top-40 -left-40 h-[500px] w-[500px] rounded-full opacity-30 blur-3xl"
-        style={{ background: "radial-gradient(circle, #00D9FF 0%, transparent 70%)" }}
-      />
-      <div
-        className="absolute -bottom-40 -right-40 h-[600px] w-[600px] rounded-full opacity-25 blur-3xl"
-        style={{ background: "radial-gradient(circle, #8B5CF6 0%, transparent 70%)" }}
-      />
+      <div className="grid-bg absolute inset-0 opacity-60" />
     </div>
   );
 }
 
 export function CursorGlow() {
-  const ref = useRef<HTMLDivElement>(null);
-  useEffect(() => {
-    const el = ref.current;
-    if (!el) return;
-    const onMove = (e: MouseEvent) => {
-      el.style.transform = `translate(${e.clientX - 200}px, ${e.clientY - 200}px)`;
-    };
-    window.addEventListener("mousemove", onMove);
-    return () => window.removeEventListener("mousemove", onMove);
-  }, []);
-  return (
-    <div
-      ref={ref}
-      aria-hidden
-      className="pointer-events-none fixed left-0 top-0 z-0 h-[400px] w-[400px] rounded-full opacity-40 blur-3xl transition-transform duration-300 ease-out"
-      style={{ background: "radial-gradient(circle, rgba(0,217,255,0.25), transparent 60%)" }}
-    />
-  );
+  return null;
 }
 
 export function ScrollProgress() {
@@ -130,9 +105,9 @@ export function ScrollProgress() {
     <div className="fixed left-0 top-0 z-50 h-[2px] w-full bg-transparent">
       <div
         ref={ref}
-        className="h-full transition-[width] duration-100"
-        style={{ background: "linear-gradient(90deg, #00D9FF, #8B5CF6)" }}
+        className="h-full bg-[#00D9FF] transition-[width] duration-100"
       />
     </div>
   );
 }
+
