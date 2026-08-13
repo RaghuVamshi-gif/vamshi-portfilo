@@ -96,7 +96,7 @@ function Nav() {
     <header className="fixed left-0 right-0 top-0 z-40 px-4 pt-4 sm:px-6">
       <div className="glass mx-auto flex max-w-6xl items-center justify-between rounded-full px-5 py-3">
         <a href="#home" className="flex items-center gap-2 font-display text-sm font-bold tracking-wider">
-          <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-[#00D9FF] to-[#8B5CF6] text-black">
+          <span className="grid h-7 w-7 place-items-center rounded-md bg-[#00D9FF] text-black">
             R
           </span>
           <span className="text-gradient">RAGHU VAMSHI</span>
@@ -184,7 +184,7 @@ function Hero() {
           <div className="flex flex-wrap gap-3">
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#00D9FF] to-[#8B5CF6] px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-black transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.5)]"
+              className="group inline-flex items-center gap-2 rounded-full bg-[#00D9FF] px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-black transition-all hover:bg-[#22D3EE]"
             >
               Explore Projects
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -219,7 +219,7 @@ function SocialIcon({ href, icon }: { href: string; icon: React.ReactNode }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="glass grid h-10 w-10 place-items-center rounded-full text-muted-foreground transition-all hover:text-[#22D3EE] hover:shadow-[0_0_20px_rgba(0,217,255,0.35)]"
+      className="glass grid h-10 w-10 place-items-center rounded-full text-muted-foreground transition-all hover:text-[#22D3EE]"
     >
       {icon}
     </a>
@@ -271,7 +271,7 @@ function About() {
               key={h.label}
               className="glass glass-hover group rounded-2xl p-4"
             >
-              <div className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-[#00D9FF]/20 to-[#8B5CF6]/20 text-[#22D3EE] transition-all group-hover:shadow-[0_0_15px_rgba(0,217,255,0.4)]">
+              <div className="grid h-9 w-9 place-items-center rounded-lg bg-[#00D9FF]/10 text-[#22D3EE] transition-all">
                 <h.icon className="h-4 w-4" />
               </div>
               <p className="mt-3 font-display text-sm font-medium">{h.label}</p>
@@ -301,7 +301,7 @@ function Skills() {
         {SKILL_GROUPS.map((g) => (
           <div key={g.title} className="glass glass-hover rounded-2xl p-6">
             <div className="mb-5 flex items-center gap-3">
-              <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[#00D9FF]/20 to-[#8B5CF6]/20 text-[#22D3EE]">
+              <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#00D9FF]/10 text-[#22D3EE]">
                 <g.icon className="h-5 w-5" />
               </div>
               <h3 className="font-display text-lg font-semibold">{g.title}</h3>
@@ -458,7 +458,7 @@ function Education() {
     <Section id="education" eyebrow="05 · Education" title="Academic Path">
       <div className="glass rounded-3xl p-7 sm:p-10">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-          <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-[#00D9FF]/20 to-[#8B5CF6]/20 text-[#22D3EE]">
+          <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-[#00D9FF]/10 text-[#22D3EE]">
             <GraduationCap className="h-7 w-7" />
           </div>
           <div className="flex-1">
@@ -596,7 +596,7 @@ function Contact() {
           <button
             type="submit"
             disabled={sending}
-            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#00D9FF] to-[#8B5CF6] px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-black transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] disabled:opacity-60"
+            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#00D9FF] px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-black transition-all hover:bg-[#22D3EE] disabled:opacity-60"
           >
             {sending ? "Sending..." : "Send Message"}
             <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -625,7 +625,7 @@ function Field({ label, name, type = "text", placeholder }: { label: string; nam
 function ContactRow({ icon, label, value, href }: { icon: React.ReactNode; label: string; value: string; href: string }) {
   return (
     <a href={href} className="glass glass-hover flex items-center gap-4 rounded-2xl p-4">
-      <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[#00D9FF]/20 to-[#8B5CF6]/20 text-[#22D3EE]">
+      <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#00D9FF]/10 text-[#22D3EE]">
         {icon}
       </div>
       <div className="min-w-0">
@@ -643,7 +643,7 @@ function Footer() {
       <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2 font-display text-sm font-bold tracking-wider">
-            <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-[#00D9FF] to-[#8B5CF6] text-black">R</span>
+            <span className="grid h-7 w-7 place-items-center rounded-md bg-[#00D9FF] text-black">R</span>
             <span className="text-gradient">RAGHU VAMSHI</span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
