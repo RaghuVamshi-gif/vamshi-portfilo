@@ -39,35 +39,33 @@
 
 :root {
   --radius: 0.75rem;
-  --background: oklch(0 0 0);
+  --background: oklch(0.04 0 0);
   --foreground: oklch(1 0 0);
-  --card: oklch(0.04 0 0);
+  --card: oklch(0.09 0 0);
   --card-foreground: oklch(1 0 0);
-  --popover: oklch(0.06 0 0);
+  --popover: oklch(0.09 0 0);
   --popover-foreground: oklch(1 0 0);
-  --primary: oklch(0.78 0.17 220);
+  --primary: oklch(0.82 0.17 220);
   --primary-foreground: oklch(0 0 0);
   --secondary: oklch(0.12 0 0);
   --secondary-foreground: oklch(1 0 0);
   --muted: oklch(0.1 0 0);
   --muted-foreground: oklch(0.7 0.01 240);
-  --accent: oklch(0.15 0 0);
-  --accent-foreground: oklch(1 0 0);
+  --accent: oklch(0.82 0.17 220);
+  --accent-foreground: oklch(0 0 0);
   --destructive: oklch(0.6 0.24 28);
   --destructive-foreground: oklch(1 0 0);
-  --border: oklch(1 0 0 / 8%);
-  --input: oklch(1 0 0 / 10%);
-  --ring: oklch(0.78 0.17 220);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 12%);
+  --ring: oklch(0.82 0.17 220);
 
-  --electric: oklch(0.82 0.17 220);          /* #00D9FF-ish */
-  --neon: oklch(0.65 0.22 295);              /* #8B5CF6 */
-  --cyan-glow: oklch(0.83 0.14 200);         /* #22D3EE */
+  /* Single accent color used across the site */
+  --electric: oklch(0.82 0.17 220);
+  --neon: oklch(0.82 0.17 220);
+  --cyan-glow: oklch(0.82 0.17 220);
 
-  --gradient-accent: linear-gradient(135deg, #00D9FF 0%, #8B5CF6 100%);
-  --gradient-text: linear-gradient(135deg, #ffffff 0%, #22D3EE 50%, #8B5CF6 100%);
-  --shadow-glow-blue: 0 0 40px rgba(0, 217, 255, 0.35);
-  --shadow-glow-purple: 0 0 40px rgba(139, 92, 246, 0.35);
-  --shadow-card: 0 8px 32px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.04);
+  --surface: #0f0f0f;
+  --shadow-card: none;
 }
 
 @layer base {
@@ -99,71 +97,51 @@
 
   /* Scrollbar */
   ::-webkit-scrollbar { width: 8px; height: 8px; }
-  ::-webkit-scrollbar-track { background: #000; }
-  ::-webkit-scrollbar-thumb { background: linear-gradient(180deg, #00D9FF, #8B5CF6); border-radius: 4px; }
+  ::-webkit-scrollbar-track { background: #0a0a0a; }
+  ::-webkit-scrollbar-thumb { background: #00D9FF; border-radius: 4px; }
 }
 
 @utility grid-bg {
   background-image:
-    linear-gradient(rgba(0, 217, 255, 0.06) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(0, 217, 255, 0.06) 1px, transparent 1px);
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
   background-size: 56px 56px;
-  mask-image: radial-gradient(ellipse at center, black 30%, transparent 75%);
 }
 
+/* Flat surface (previously glassmorphism) */
 @utility glass {
-  background: rgba(255, 255, 255, 0.03);
-  backdrop-filter: blur(20px) saturate(150%);
-  border: 1px solid rgba(255, 255, 255, 0.08);
-  box-shadow: var(--shadow-card);
+  background: var(--surface);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 @utility glass-hover {
-  transition: all 0.4s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: border-color 0.2s ease, transform 0.2s ease;
   &:hover {
-    border-color: rgba(0, 217, 255, 0.4);
-    box-shadow: 0 0 0 1px rgba(0, 217, 255, 0.2), 0 12px 50px rgba(0, 217, 255, 0.15);
-    transform: translateY(-4px);
+    border-color: rgba(0, 217, 255, 0.5);
+    transform: translateY(-2px);
   }
 }
 
 @utility text-gradient {
-  background: var(--gradient-text);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #00D9FF;
 }
 
 @utility text-accent-gradient {
-  background: var(--gradient-accent);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  color: #00D9FF;
 }
 
 @utility neon-border {
-  position: relative;
-  &::before {
-    content: "";
-    position: absolute;
-    inset: -1px;
-    border-radius: inherit;
-    padding: 1px;
-    background: linear-gradient(135deg, rgba(0, 217, 255, 0.6), rgba(139, 92, 246, 0.6));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-            mask-composite: exclude;
-    pointer-events: none;
-  }
+  border: 1px solid rgba(0, 217, 255, 0.5);
 }
 
 @utility glow-blue {
-  box-shadow: var(--shadow-glow-blue);
+  box-shadow: none;
 }
 
 @utility glow-purple {
-  box-shadow: var(--shadow-glow-purple);
+  box-shadow: none;
 }
+
 
 @keyframes float {
   0%, 100% { transform: translateY(0px); }
