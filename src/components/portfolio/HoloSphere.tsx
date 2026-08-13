@@ -24,8 +24,8 @@ export function HoloSphere() {
           const y = 200 + Math.sin(angle) * r;
           return (
             <g key={idx}>
-              <line x1="200" y1="200" x2={x} y2={y} stroke="url(#line)" strokeWidth="0.6" opacity="0.5" />
-              <circle cx={x} cy={y} r="3" fill="#22D3EE">
+              <line x1="200" y1="200" x2={x} y2={y} stroke="#00D9FF" strokeWidth="0.6" opacity="0.5" />
+              <circle cx={x} cy={y} r="3" fill="#00D9FF">
                 <animate attributeName="opacity" values="0.3;1;0.3" dur={`${2 + idx * 0.2}s`} repeatCount="indefinite" />
               </circle>
             </g>
@@ -57,7 +57,7 @@ export function HoloSphere() {
       ].map((b, i) => (
         <div
           key={b.label}
-          className="glass absolute rounded-full px-3 py-1 font-mono text-[11px] text-[#22D3EE] animate-float"
+          className="glass absolute rounded-full px-3 py-1 font-mono text-[11px] text-[#00D9FF] animate-float"
           style={{ ...b, animationDelay: `${i * 0.6}s` } as React.CSSProperties}
         >
           {b.label}
