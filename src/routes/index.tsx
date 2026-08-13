@@ -318,7 +318,7 @@ function Skills() {
                       className="h-full rounded-full"
                       style={{
                         width: `${val}%`,
-                        background: "linear-gradient(90deg, #00D9FF, #8B5CF6)",
+                        background: "#00D9FF",
                         boxShadow: "0 0 10px rgba(0,217,255,0.6)",
                       }}
                     />
@@ -350,7 +350,7 @@ function Experience() {
   return (
     <Section id="experience" eyebrow="03 · Experience" title="Timeline">
       <div className="relative">
-        <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#00D9FF] via-[#8B5CF6] to-transparent md:left-1/2" />
+        <div className="absolute left-4 top-0 bottom-0 w-px bg-white/10 md:left-1/2" />
         <div className="space-y-10">
           {roles.map((r, i) => (
             <div
@@ -694,7 +694,7 @@ function Section({
               <span className="text-gradient">{title}</span>
             </h2>
           </div>
-          <div className="hidden h-px flex-1 bg-gradient-to-r from-transparent via-white/20 to-transparent sm:block" />
+          <div className="hidden h-px flex-1 bg-white/10 sm:block" />
         </div>
         {children}
       </div>

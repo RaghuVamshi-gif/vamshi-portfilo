@@ -79,7 +79,7 @@ function ProjectDetail() {
         {/* Header */}
         <header className="glass relative mt-6 overflow-hidden rounded-3xl p-8 sm:p-12">
           <div
-            className={`pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-gradient-to-br ${project.accent} opacity-20 blur-3xl`}
+            className={`pointer-events-none absolute -right-24 -top-24 h-72 w-72 rounded-full bg-transparent`}
           />
           <p className="font-mono text-[11px] uppercase tracking-widest text-[#00D9FF]">
             {project.category}
