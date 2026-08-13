@@ -96,7 +96,7 @@ function Nav() {
     <header className="fixed left-0 right-0 top-0 z-40 px-4 pt-4 sm:px-6">
       <div className="glass mx-auto flex max-w-6xl items-center justify-between rounded-full px-5 py-3">
         <a href="#home" className="flex items-center gap-2 font-display text-sm font-bold tracking-wider">
-          <span className="grid h-7 w-7 place-items-center rounded-md bg-[#00D9FF] text-black">
+          <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-[#00D9FF] to-[#8B5CF6] text-black">
             R
           </span>
           <span className="text-gradient">RAGHU VAMSHI</span>
@@ -106,7 +106,7 @@ function Nav() {
             <a
               key={n.id}
               href={`#${n.id}`}
-              className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-[#00D9FF]"
+              className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-[#22D3EE]"
             >
               {n.label}
             </a>
@@ -114,7 +114,7 @@ function Nav() {
         </nav>
         <a
           href="#contact"
-          className="hidden rounded-full border border-[#00D9FF]/40 bg-[#00D9FF]/5 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-[#00D9FF] transition-all hover:bg-[#00D9FF]/15 hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] md:inline-block"
+          className="hidden rounded-full border border-[#00D9FF]/40 bg-[#00D9FF]/5 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-[#22D3EE] transition-all hover:bg-[#00D9FF]/15 hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] md:inline-block"
         >
           Hire Me
         </a>
@@ -153,10 +153,10 @@ function Hero() {
     <section id="home" className="relative flex min-h-screen items-center px-4 pt-32 sm:px-6 lg:px-10">
       <div className="mx-auto grid w-full max-w-7xl items-center gap-12 lg:grid-cols-2">
         <div className="space-y-7">
-          <div className="inline-flex items-center gap-2 rounded-full border border-[#00D9FF]/30 bg-[#00D9FF]/5 px-3 py-1 font-mono text-[11px] uppercase tracking-widest text-[#00D9FF]">
+          <div className="inline-flex items-center gap-2 rounded-full border border-[#00D9FF]/30 bg-[#00D9FF]/5 px-3 py-1 font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]">
             <span className="relative flex h-2 w-2">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#00D9FF] opacity-75" />
-              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#00D9FF]" />
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#22D3EE] opacity-75" />
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-[#22D3EE]" />
             </span>
             Available for opportunities
           </div>
@@ -184,7 +184,7 @@ function Hero() {
           <div className="flex flex-wrap gap-3">
             <a
               href="#projects"
-              className="group inline-flex items-center gap-2 rounded-full bg-[#00D9FF] px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-black transition-all hover:bg-[#00D9FF]"
+              className="group inline-flex items-center gap-2 rounded-full bg-gradient-to-r from-[#00D9FF] to-[#8B5CF6] px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-black transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.5)]"
             >
               Explore Projects
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -219,7 +219,7 @@ function SocialIcon({ href, icon }: { href: string; icon: React.ReactNode }) {
       href={href}
       target="_blank"
       rel="noreferrer"
-      className="glass grid h-10 w-10 place-items-center rounded-full text-muted-foreground transition-all hover:text-[#00D9FF]"
+      className="glass grid h-10 w-10 place-items-center rounded-full text-muted-foreground transition-all hover:text-[#22D3EE] hover:shadow-[0_0_20px_rgba(0,217,255,0.35)]"
     >
       {icon}
     </a>
@@ -258,7 +258,7 @@ function About() {
             {["AI", "Robotics", "Blockchain", "Full Stack", "Design Systems"].map((t) => (
               <span
                 key={t}
-                className="rounded-full border border-[#00D9FF]/20 bg-[#00D9FF]/5 px-3 py-1 font-mono text-[11px] uppercase tracking-widest text-[#00D9FF]"
+                className="rounded-full border border-[#00D9FF]/20 bg-[#00D9FF]/5 px-3 py-1 font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]"
               >
                 {t}
               </span>
@@ -271,7 +271,7 @@ function About() {
               key={h.label}
               className="glass glass-hover group rounded-2xl p-4"
             >
-              <div className="grid h-9 w-9 place-items-center rounded-lg bg-[#00D9FF]/10 text-[#00D9FF] transition-all">
+              <div className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-[#00D9FF]/20 to-[#8B5CF6]/20 text-[#22D3EE] transition-all group-hover:shadow-[0_0_15px_rgba(0,217,255,0.4)]">
                 <h.icon className="h-4 w-4" />
               </div>
               <p className="mt-3 font-display text-sm font-medium">{h.label}</p>
@@ -301,7 +301,7 @@ function Skills() {
         {SKILL_GROUPS.map((g) => (
           <div key={g.title} className="glass glass-hover rounded-2xl p-6">
             <div className="mb-5 flex items-center gap-3">
-              <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#00D9FF]/10 text-[#00D9FF]">
+              <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[#00D9FF]/20 to-[#8B5CF6]/20 text-[#22D3EE]">
                 <g.icon className="h-5 w-5" />
               </div>
               <h3 className="font-display text-lg font-semibold">{g.title}</h3>
@@ -311,14 +311,14 @@ function Skills() {
                 <div key={name as string}>
                   <div className="mb-1 flex justify-between font-mono text-[11px] uppercase tracking-wider">
                     <span className="text-muted-foreground">{name}</span>
-                    <span className="text-[#00D9FF]">{val}%</span>
+                    <span className="text-[#22D3EE]">{val}%</span>
                   </div>
                   <div className="h-1 overflow-hidden rounded-full bg-white/5">
                     <div
                       className="h-full rounded-full"
                       style={{
                         width: `${val}%`,
-                        background: "#00D9FF",
+                        background: "linear-gradient(90deg, #00D9FF, #8B5CF6)",
                         boxShadow: "0 0 10px rgba(0,217,255,0.6)",
                       }}
                     />
@@ -350,7 +350,7 @@ function Experience() {
   return (
     <Section id="experience" eyebrow="03 · Experience" title="Timeline">
       <div className="relative">
-        <div className="absolute left-4 top-0 bottom-0 w-px bg-white/10 md:left-1/2" />
+        <div className="absolute left-4 top-0 bottom-0 w-px bg-gradient-to-b from-[#00D9FF] via-[#8B5CF6] to-transparent md:left-1/2" />
         <div className="space-y-10">
           {roles.map((r, i) => (
             <div
@@ -358,11 +358,11 @@ function Experience() {
               className={`relative grid gap-6 md:grid-cols-2 ${i % 2 ? "md:[&>*:first-child]:order-2" : ""}`}
             >
               <div className="absolute left-4 top-3 grid h-3 w-3 -translate-x-1/2 place-items-center md:left-1/2">
-                <span className="absolute h-3 w-3 animate-ping rounded-full bg-[#00D9FF] opacity-60" />
-                <span className="relative h-3 w-3 rounded-full bg-[#00D9FF]" />
+                <span className="absolute h-3 w-3 animate-ping rounded-full bg-[#22D3EE] opacity-60" />
+                <span className="relative h-3 w-3 rounded-full bg-[#22D3EE]" />
               </div>
               <div className="pl-10 md:pl-0 md:pr-10 md:text-right">
-                <div className="inline-flex items-center gap-2 rounded-full border border-[#00D9FF]/20 bg-[#00D9FF]/5 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-[#00D9FF]">
+                <div className="inline-flex items-center gap-2 rounded-full border border-[#00D9FF]/20 bg-[#00D9FF]/5 px-3 py-1 font-mono text-[10px] uppercase tracking-widest text-[#22D3EE]">
                   <r.icon className="h-3 w-3" /> Role
                 </div>
                 <h3 className="mt-3 font-display text-2xl font-bold">{r.role}</h3>
@@ -376,7 +376,7 @@ function Experience() {
                   <ul className="space-y-2">
                     {r.items.map((it) => (
                       <li key={it} className="flex items-center gap-2 text-sm">
-                        <ChevronRight className="h-4 w-4 text-[#00D9FF]" />
+                        <ChevronRight className="h-4 w-4 text-[#22D3EE]" />
                         <span>{it}</span>
                       </li>
                     ))}
@@ -406,7 +406,7 @@ function Projects() {
             />
             <div className="flex items-start justify-between gap-4">
               <div>
-                <p className="font-mono text-[11px] uppercase tracking-widest text-[#00D9FF]">
+                <p className="font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]">
                   {String(idx + 1).padStart(2, "0")} · {p.category}
                 </p>
                 <h3 className="mt-2 font-display text-2xl font-bold sm:text-3xl">{p.name}</h3>
@@ -415,7 +415,7 @@ function Projects() {
                 to="/projects/$slug"
                 params={{ slug: p.slug }}
                 aria-label={`View details for ${p.name}`}
-                className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-[#00D9FF]/40 text-[#00D9FF] transition-transform hover:scale-110 group-hover:rotate-45"
+                className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-[#22D3EE]/40 text-[#22D3EE] transition-transform hover:scale-110 group-hover:rotate-45"
               >
                 <ArrowRight className="h-4 w-4" />
               </Link>
@@ -429,7 +429,7 @@ function Projects() {
                   key={f}
                   className="flex items-center gap-2 rounded-lg border border-white/5 bg-white/[0.02] px-3 py-2 text-xs"
                 >
-                  <span className="h-1.5 w-1.5 rounded-full bg-[#00D9FF]" />
+                  <span className="h-1.5 w-1.5 rounded-full bg-[#22D3EE]" />
                   {f}
                 </div>
               ))}
@@ -458,11 +458,11 @@ function Education() {
     <Section id="education" eyebrow="05 · Education" title="Academic Path">
       <div className="glass rounded-3xl p-7 sm:p-10">
         <div className="flex flex-col gap-5 sm:flex-row sm:items-start">
-          <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-[#00D9FF]/10 text-[#00D9FF]">
+          <div className="grid h-14 w-14 shrink-0 place-items-center rounded-2xl bg-gradient-to-br from-[#00D9FF]/20 to-[#8B5CF6]/20 text-[#22D3EE]">
             <GraduationCap className="h-7 w-7" />
           </div>
           <div className="flex-1">
-            <p className="font-mono text-[11px] uppercase tracking-widest text-[#00D9FF]">Degree</p>
+            <p className="font-mono text-[11px] uppercase tracking-widest text-[#22D3EE]">Degree</p>
             <h3 className="mt-1 font-display text-2xl font-bold">Bachelor of Technology</h3>
             <p className="text-muted-foreground">Computer Science and Engineering</p>
             <p className="mt-1 font-display text-sm font-medium text-foreground">PES UNIVERSITY</p>
@@ -529,7 +529,7 @@ function DesignProcess() {
                 </p>
               </div>
               {i < stages.length - 1 && (
-                <ChevronRight className="hidden h-5 w-5 text-[#00D9FF]/50 md:block" />
+                <ChevronRight className="hidden h-5 w-5 text-[#22D3EE]/50 md:block" />
               )}
             </div>
           ))}
@@ -596,7 +596,7 @@ function Contact() {
           <button
             type="submit"
             disabled={sending}
-            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-[#00D9FF] px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-black transition-all hover:bg-[#00D9FF] disabled:opacity-60"
+            className="group inline-flex w-full items-center justify-center gap-2 rounded-full bg-gradient-to-r from-[#00D9FF] to-[#8B5CF6] px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-black transition-all hover:shadow-[0_0_30px_rgba(0,217,255,0.5)] disabled:opacity-60"
           >
             {sending ? "Sending..." : "Send Message"}
             <Send className="h-4 w-4 transition-transform group-hover:translate-x-1" />
@@ -625,7 +625,7 @@ function Field({ label, name, type = "text", placeholder }: { label: string; nam
 function ContactRow({ icon, label, value, href }: { icon: React.ReactNode; label: string; value: string; href: string }) {
   return (
     <a href={href} className="glass glass-hover flex items-center gap-4 rounded-2xl p-4">
-      <div className="grid h-10 w-10 place-items-center rounded-xl bg-[#00D9FF]/10 text-[#00D9FF]">
+      <div className="grid h-10 w-10 place-items-center rounded-xl bg-gradient-to-br from-[#00D9FF]/20 to-[#8B5CF6]/20 text-[#22D3EE]">
         {icon}
       </div>
       <div className="min-w-0">
@@ -643,7 +643,7 @@ function Footer() {
       <div className="mx-auto grid max-w-6xl gap-8 md:grid-cols-3">
         <div>
           <div className="flex items-center gap-2 font-display text-sm font-bold tracking-wider">
-            <span className="grid h-7 w-7 place-items-center rounded-md bg-[#00D9FF] text-black">R</span>
+            <span className="grid h-7 w-7 place-items-center rounded-md bg-gradient-to-br from-[#00D9FF] to-[#8B5CF6] text-black">R</span>
             <span className="text-gradient">RAGHU VAMSHI</span>
           </div>
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
@@ -652,7 +652,7 @@ function Footer() {
         </div>
         <nav className="flex flex-wrap gap-4 md:justify-center">
           {NAV.map((n) => (
-            <a key={n.id} href={`#${n.id}`} className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-[#00D9FF]">
+            <a key={n.id} href={`#${n.id}`} className="font-mono text-xs uppercase tracking-widest text-muted-foreground transition-colors hover:text-[#22D3EE]">
               {n.label}
             </a>
           ))}
@@ -689,12 +689,12 @@ function Section({
       <div className="mx-auto max-w-7xl">
         <div className="mb-12 flex items-end justify-between gap-6">
           <div>
-            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-[#00D9FF]">{eyebrow}</p>
+            <p className="font-mono text-[11px] uppercase tracking-[0.3em] text-[#22D3EE]">{eyebrow}</p>
             <h2 className="mt-3 font-display text-4xl font-bold sm:text-5xl">
               <span className="text-gradient">{title}</span>
             </h2>
           </div>
-          <div className="hidden h-px flex-1 bg-white/10 sm:block" />
+          <div className="hidden h-px flex-1 bg-gradient-to-r from-transparent via-white/20 to-transparent sm:block" />
         </div>
         {children}
       </div>
