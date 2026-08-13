@@ -539,15 +539,30 @@ function DesignProcess() {
 /* ---------- CONTACT ---------- */
 function Contact() {
   const [sending, setSending] = useState(false);
-  const onSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const send = useServerFn(sendContactMessage);
+  const onSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    const form = e.currentTarget;
+    const fd = new FormData(form);
     setSending(true);
-    setTimeout(() => {
-      setSending(false);
+    try {
+      await send({
+        data: {
+          name: String(fd.get("name") ?? ""),
+          email: String(fd.get("email") ?? ""),
+          message: String(fd.get("message") ?? ""),
+        },
+      });
       toast.success("Message sent. I'll get back to you soon.");
-      (e.target as HTMLFormElement).reset();
-    }, 900);
+      form.reset();
+    } catch (err) {
+      console.error(err);
+      toast.error("Could not send your message. Please try again.");
+    } finally {
+      setSending(false);
+    }
   };
+
   return (
     <Section id="contact" eyebrow="08 · Contact" title="Let's Build Together">
       <div className="grid gap-6 lg:grid-cols-5">
