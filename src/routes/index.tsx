@@ -30,7 +30,10 @@ import { TypingText } from "@/components/portfolio/TypingText";
 import { HoloSphere } from "@/components/portfolio/HoloSphere";
 import { Counter } from "@/components/portfolio/Counter";
 import { toast } from "sonner";
+import { useServerFn } from "@tanstack/react-start";
+import { sendContactMessage } from "@/lib/contact.functions";
 import { PROJECTS } from "@/lib/projects";
+
 
 export const Route = createFileRoute("/")({
   head: () => ({
