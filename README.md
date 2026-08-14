@@ -2,6 +2,8 @@
 
 BLACK FUTURISTIC DEVELOPER PORTFOLIO WEBSITE
 
+https://preview--vamshi-portfilo.lovable.app/
+
 Create a premium futuristic developer portfolio website with a pure black theme, advanced animations, glassmorphism, AI-inspired visuals, and a modern technology aesthetic.
 
 The website should look like a combination of:
