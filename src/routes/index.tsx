@@ -33,6 +33,9 @@ import { toast } from "sonner";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { PROJECTS } from "@/lib/projects";
+import resumeAsset from "@/assets/Vamshi_Resume.pdf.asset.json";
+
+const RESUME_URL = resumeAsset.url;
 
 
 export const Route = createFileRoute("/")({
@@ -112,12 +115,22 @@ function Nav() {
             </a>
           ))}
         </nav>
-        <a
-          href="#contact"
-          className="hidden rounded-full border border-[#00D9FF]/40 bg-[#00D9FF]/5 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-[#22D3EE] transition-all hover:bg-[#00D9FF]/15 hover:shadow-[0_0_20px_rgba(0,217,255,0.4)] md:inline-block"
-        >
-          Hire Me
-        </a>
+        <div className="hidden items-center gap-2 md:flex">
+          <a
+            href={RESUME_URL}
+            download="Vamshi_Resume.pdf"
+            className="glass glass-hover inline-flex items-center gap-2 rounded-full px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-foreground"
+          >
+            <Download className="h-3.5 w-3.5" />
+            Resume
+          </a>
+          <a
+            href="#contact"
+            className="rounded-full border border-[#00D9FF]/40 bg-[#00D9FF]/5 px-4 py-1.5 font-mono text-xs uppercase tracking-widest text-[#22D3EE] transition-all hover:bg-[#00D9FF]/15 hover:shadow-[0_0_20px_rgba(0,217,255,0.4)]"
+          >
+            Hire Me
+          </a>
+        </div>
         <button
           onClick={() => setOpen((o) => !o)}
           className="md:hidden text-foreground"
@@ -141,6 +154,15 @@ function Nav() {
               {n.label}
             </a>
           ))}
+          <a
+            href={RESUME_URL}
+            download="Vamshi_Resume.pdf"
+            onClick={() => setOpen(false)}
+            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-[#22D3EE]"
+          >
+            <Download className="h-3.5 w-3.5" />
+            Download Resume
+          </a>
         </div>
       )}
     </header>
@@ -190,7 +212,8 @@ function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#contact"
+              href={RESUME_URL}
+              download="Vamshi_Resume.pdf"
               className="glass glass-hover inline-flex items-center gap-2 rounded-full px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-foreground"
             >
               <Download className="h-4 w-4" />
@@ -649,6 +672,14 @@ function Footer() {
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Building intelligent digital experiences through design and technology.
           </p>
+          <a
+            href={RESUME_URL}
+            download="Vamshi_Resume.pdf"
+            className="glass glass-hover mt-4 inline-flex items-center gap-2 rounded-full px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-foreground"
+          >
+            <Download className="h-3.5 w-3.5" />
+            Download Resume
+          </a>
         </div>
         <nav className="flex flex-wrap gap-4 md:justify-center">
           {NAV.map((n) => (
