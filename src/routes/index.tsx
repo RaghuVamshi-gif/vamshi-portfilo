@@ -154,6 +154,15 @@ function Nav() {
               {n.label}
             </a>
           ))}
+          <a
+            href={RESUME_URL}
+            download="Vamshi_Resume.pdf"
+            onClick={() => setOpen(false)}
+            className="inline-flex items-center gap-2 font-mono text-xs uppercase tracking-widest text-[#22D3EE]"
+          >
+            <Download className="h-3.5 w-3.5" />
+            Download Resume
+          </a>
         </div>
       )}
     </header>
@@ -203,7 +212,8 @@ function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#contact"
+              href={RESUME_URL}
+              download="Vamshi_Resume.pdf"
               className="glass glass-hover inline-flex items-center gap-2 rounded-full px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-foreground"
             >
               <Download className="h-4 w-4" />
