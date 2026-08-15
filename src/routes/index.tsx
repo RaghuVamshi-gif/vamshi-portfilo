@@ -375,6 +375,11 @@ function Experience() {
       items: ["Responsive Design", "Frontend Development", "CMS Integration", "Performance Optimization", "SEO Best Practices"],
       icon: Globe,
     },
+    {
+      role: "Freelancer",
+      items: ["Client Communication", "Project Management", "End-to-End Delivery", "Branding & Identity", "Technical Consulting"],
+      icon: Briefcase,
+    },
   ];
   return (
     <Section id="experience" eyebrow="03 · Experience" title="Timeline">
