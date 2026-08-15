@@ -19,6 +19,7 @@ import {
   GraduationCap,
   Send,
   ChevronRight,
+  Globe,
 } from "lucide-react";
 import {
   GridBackdrop,
@@ -368,6 +369,11 @@ function Experience() {
       role: "Software Developer",
       items: ["Frontend Development", "Backend Development", "API Development", "Database Design", "Optimization"],
       icon: Code2,
+    },
+    {
+      role: "Website Developer",
+      items: ["Responsive Design", "Frontend Development", "CMS Integration", "Performance Optimization", "SEO Best Practices"],
+      icon: Globe,
     },
   ];
   return (
