@@ -20,6 +20,7 @@ import {
   Send,
   ChevronRight,
   Globe,
+  Briefcase,
 } from "lucide-react";
 import {
   GridBackdrop,
