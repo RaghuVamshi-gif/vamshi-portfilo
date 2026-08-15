@@ -20,6 +20,7 @@ import {
   Send,
   ChevronRight,
   Globe,
+  Briefcase,
 } from "lucide-react";
 import {
   GridBackdrop,
@@ -374,6 +375,11 @@ function Experience() {
       role: "Website Developer",
       items: ["Responsive Design", "Frontend Development", "CMS Integration", "Performance Optimization", "SEO Best Practices"],
       icon: Globe,
+    },
+    {
+      role: "Freelancer",
+      items: ["Client Communication", "Project Management", "End-to-End Delivery", "Branding & Identity", "Technical Consulting"],
+      icon: Briefcase,
     },
   ];
   return (
