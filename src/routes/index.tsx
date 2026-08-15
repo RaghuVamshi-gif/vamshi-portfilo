@@ -672,6 +672,14 @@ function Footer() {
           <p className="mt-3 max-w-xs text-sm text-muted-foreground">
             Building intelligent digital experiences through design and technology.
           </p>
+          <a
+            href={RESUME_URL}
+            download="Vamshi_Resume.pdf"
+            className="glass glass-hover mt-4 inline-flex items-center gap-2 rounded-full px-4 py-2 font-mono text-[11px] uppercase tracking-widest text-foreground"
+          >
+            <Download className="h-3.5 w-3.5" />
+            Download Resume
+          </a>
         </div>
         <nav className="flex flex-wrap gap-4 md:justify-center">
           {NAV.map((n) => (
