@@ -19,6 +19,7 @@ import {
   GraduationCap,
   Send,
   ChevronRight,
+  Globe,
 } from "lucide-react";
 import {
   GridBackdrop,
