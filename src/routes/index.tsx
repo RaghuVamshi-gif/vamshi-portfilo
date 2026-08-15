@@ -33,6 +33,8 @@ import { toast } from "sonner";
 import { useServerFn } from "@tanstack/react-start";
 import { sendContactMessage } from "@/lib/contact.functions";
 import { PROJECTS } from "@/lib/projects";
+import resumePdf from "@/assets/RaghuVamshi_Resume.pdf.asset.json";
+
 
 
 export const Route = createFileRoute("/")({
@@ -190,7 +192,8 @@ function Hero() {
               <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
             </a>
             <a
-              href="#contact"
+              href={resumePdf.url}
+              download="RaghuVamshi_Resume.pdf"
               className="glass glass-hover inline-flex items-center gap-2 rounded-full px-6 py-3 font-mono text-xs font-semibold uppercase tracking-widest text-foreground"
             >
               <Download className="h-4 w-4" />
